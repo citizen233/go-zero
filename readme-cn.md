@@ -135,9 +135,9 @@ GO111MODULE=on GOPROXY=https://goproxy.cn/,direct go get -u github.com/tal-tech/
 
     编写业务代码：
 
-      * api 文件定义了服务对外暴露的路由，可参考 [api 规范](https://github.com/tal-tech/zero-doc/blob/main/doc/goctl.md)
-      * 可以在 servicecontext.go 里面传递依赖给 logic，比如 mysql, redis 等
-      * 在 api 定义的 get/post/put/delete 等请求对应的 logic 里增加业务处理逻辑
+      * api 文件定义了服务对外 HTTP 接口，可参考 [api 规范](https://github.com/tal-tech/zero-doc/blob/main/doc/goctl.md)
+      * 可以在 `servicecontext.go` 里面传递依赖给 logic，比如 mysql, redis 等
+      * 在 api 定义的 `get/post/put/delete` 等请求对应的 logic 里增加业务处理逻辑
 
 3. 可以根据 api 文件生成前端需要的 Java, TypeScript, Dart, JavaScript 代码
 
@@ -215,6 +215,7 @@ go-zero 已被许多公司用于生产部署，接入场景如在线教育、电
 >35. 秦皇岛2084team
 >36. 天翼云股份有限公司
 >37. 南京速优云信息科技有限公司
+>38. 北京小鸦科技有限公司
 
 如果贵公司也已使用 go-zero，欢迎在 [登记地址](https://github.com/tal-tech/go-zero/issues/602) 登记，仅仅为了推广，不做其它用途。
 
